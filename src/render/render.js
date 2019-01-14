@@ -69,7 +69,11 @@ module.exports.init = function init() {
     minHeight: global.config.WINDOW_MIN_HEIGHT,
     width: global.config.WINDOW_DEFAULT_WIDTH,
     minWidth: global.config.WINDOW_MIN_WIDTH,
+    frame: false,
+    transparent: true
   });
+
+  mainWin.setMenu(null)
 
   mainWin.loadFile(global.config.WINDOW_MAIN);
 
